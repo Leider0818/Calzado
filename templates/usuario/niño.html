@@ -1,10 +1,10 @@
 
-{% include 'sitio/header.html' %}
+{% include 'usuario/header.html' %}
 
 <section class="banner">
     <div class="content-banner">
         <p>Calzado SAS</p>
-        <h2>100% Cuero <br />Excelente Calidad</h2>
+        <h2>Diseños 100% originales <br />Excelente Calidad</h2>
         <a href="#">Comprar ahora</a>
     </div>
 
@@ -71,7 +71,7 @@
         <!-- Producto 1 -->
         <div class="card-product">
             <div class="container-img">
-                <img src="View/img/img11.jpg" />
+                <img src="{{url_for('static', filename='img/img11.jpg')}}" />
                 <span class="discount">-13%</span>
                 <div class="button-group">
                     <span>
@@ -104,7 +104,7 @@
         <div class="card-product">
             <div class="container-img">
                 <img
-                    src="View/img/Img6.jpg"/>
+                    src="{{url_for('static', filename='img/Img6.jpg')}}"/>
                 <span class="discount">-22%</span>
                 <div class="button-group">
                     <span>
@@ -137,7 +137,7 @@
         <div class="card-product">
             <div class="container-img">
                 <img
-                    src="View/img/img3.jpg"
+                    src="{{url_for('static', filename='img/img3.jpg')}}"
                     
                 />
                 <div class="button-group">
@@ -170,7 +170,7 @@
         <!--  -->
         <div class="card-product">
             <div class="container-img">
-                <img src="View/img/img5.jpg" />
+                <img src="{{url_for('static', filename='img/img5.jpg')}}" />
                 <div class="button-group">
                     <span>
                         <i class="fa-regular fa-eye"></i>
@@ -203,19 +203,19 @@
 
 <section class="gallery">
     <img
-        src="View/img/portada1.jpg"
+        src="{{url_for('static', filename='img/portada1.jpg')}}"
         class="gallery-img-1"
     /><img
-        src="View/img/portada2.jpg"
+        src="{{url_for('static', filename='img/portada2.jpg')}}"
         class="gallery-img-2"
     /><img
-        src="View/img/portada4.jpg"
+        src="{{url_for('static', filename='img/portada4.jpg')}}"
         class="gallery-img-3"
     /><img
-        src="View/img/portada3.jpg"
+        src="{{url_for('static', filename='img/portada3.jpg')}}"
         class="gallery-img-4"
     /><img
-        src="View/img/portada5.jpg"
+        src="{{url_for('static', filename='img/portada5.jpg')}}"
         class="gallery-img-5"
     />
 </section>
@@ -226,7 +226,7 @@
         <!-- Producto 1 -->
         <div class="card-product">
             <div class="container-img">
-                <img src="View/img/portada12.jpg" alt="Cafe Irish" />
+                <img src="{{url_for('static', filename='img/portada12.jpg')}}" alt="Cafe Irish" />
                 <span class="discount">-13%</span>
                 <div class="button-group">
                     <span>
@@ -262,7 +262,7 @@
             <div class="container-blogs">
                 <div class="card-blog">
                     <div class="container-img">
-                        <img src="View/img/portada13.jpg"/>
+                        <img src="{{url_for('static', filename='img/portada13.jpg')}}"/>
                         <div class="button-group-blog">
                             <span>
                                 <i class="fa-solid fa-magnifying-glass"></i>
@@ -282,7 +282,7 @@
                 </div>
                 <div class="card-blog">
                     <div class="container-img">
-                        <img src="View/img/portada14.jpg" />
+                        <img src="{{url_for('static', filename='img/portada14.jpg')}}" />
                         <div class="button-group-blog">
                             <span>
                                 <i class="fa-solid fa-magnifying-glass"></i>
@@ -302,7 +302,7 @@
                 </div>
                 <div class="card-blog">
                     <div class="container-img">
-                        <img src="View/img/portada15.jpg"/>
+                        <img src="{{url_for('static', filename='img/portada15.jpg')}}"/>
                         <div class="button-group-blog">
                             <span>
                                 <i class="fa-solid fa-magnifying-glass"></i>
@@ -324,5 +324,4 @@
         </section>
     </main>
 
-    {% include 'sitio/footer.html' %}
-
+    {% include 'usuario/footer.html' %}

@@ -4,14 +4,14 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Login - CALZADO S.A.S</title>
-    <link rel="stylesheet" href="view/css/style.css">
-    <link rel="icon" href="view/img/zapato.png" type="image/x-icon">
+    <link rel="stylesheet" href="{{url_for('static', filename='css/login.css')}}">
+    <link rel="icon" href="{{url_for('static', filename='img/zapato.png')}}" type="image/x-icon">
 </head>
 <body>
     <div class="container">
         <div class="left-side">
             <div class="overlay"></div>
-            <img src="view/img/fondo.jpg" alt="Calzado Elegante">
+            <img src="{{url_for('static', filename='img/fondo.jpg')}}" alt="Calzado Elegante">
         </div>
         <div class="right-side">
             <h1>CALZADO S.A.S</h1>

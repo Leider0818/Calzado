@@ -1,6 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
 
-
 :root {
 	--primary-color: #F5F5F5;
 	--background-color: #F0F0F0;
@@ -207,6 +206,63 @@ html {
 	background-position: center;
 }
 
+
+.carruseles{
+	width: 300%;
+	height: 100%;
+	display: flex;
+	background-color: white; 
+}
+
+
+.container-carousel{
+	width: 100%	;
+	height: 60em;
+	background-color: white;
+	background: linear-gradient( rgb(0, 0, 0), rgb(0 0 0 / 42%));
+	position: relative;
+	overflow: hidden;
+}
+
+.slider-section{
+	width: calc(100% / 3);
+	height: 100%;
+}
+
+.slider-section img {
+	width: 100%;
+	height: 100%;
+	object-fit: cover;
+}
+
+.btn-left, .btn-right{
+	display: flex;
+	position: absolute;
+    top: 50%;	
+    font-size: 1.5rem;
+	background-color: transparent;
+	border-radius: 15%;
+    cursor: pointer;
+	padding: 5px;
+	font-weight: 600;
+	color: #fffffff1; 
+	transform: translate(0,-50%);
+	user-select: none;
+}
+
+.btn-left:hover, .btn-right:hover {
+	background-color: #151515;
+	color: white;
+}
+
+.btn-left{
+	left: 10px;
+}
+
+.btn-right{
+	right: 10px;
+}
+
 .content-banner {
 	max-width: 90rem;
 	margin: 0 auto;
@@ -237,6 +293,8 @@ html {
 	text-transform: uppercase;
 	border-radius: 3rem;
 }
+
+
 
 /* ********************************** */
 .main-content {
